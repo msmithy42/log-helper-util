@@ -1,0 +1,783 @@
+12:12:23,312 DEBUG [PnrBuilderDataProviderService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PnrBuilderDataProviderService Request: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRQ@28fc1ee0[
+  action=INDIRECT_CANCEL
+  athXml=<?xml version="1.0" encoding="UTF-8"?><ath createTime="-3547539549360721757" directoryID="0" sessionMgrContextName="Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/" sessionMgrDirectName="ICESMS\/STSB" sessionMgrLBName="ICESMSLB\/STS.LB" sessionRecordID="1884961"><version major="1" minor="5"/><ATHString>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0</ATHString><loggingContext appLevel="1" auditLevel="1" billingLevel="1" metricsLevel="1" securityLevel="1"/><securityContext><user affiliationcode="1" branch="0" domain="AA" group="AAS" id="218329" station="0"/></securityContext><sessionContext activeTimeout="0" createTime="1428512304" idleTimeout="1800" lastModifiedTime="1428513126" sequenceNumber="0" transactionID="0"><sessionVersion major="1" minor="0"/><tpfSession tpfClusterName="access.tsts.sabre.com" tpfIsConfigOverridden="false" tpfIsIceCreated="false" tpfLniata="6771718" hexLniata="675406" tpfLockID="280080707" tpfPoolType="0" tpfProfileCity="" tpfProfileCode="" tpfProfileKey="" tpfProfileName="HDQTSG" tpfProtocol="HSSP" tpfEnterprise="SABRE"/></sessionContext></ath>
+  agentEntryInput=<null>
+  pnrBytes={1,64,32,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,32,0,0,-56,-30,-43,-60,-28,-39,0,0,0,0,12,30,69,-106,0,0,70,73,12,8,70,110,5,0,-50,-60,-99,-40,93,-66,57,-95,70,73,0,2,0,0,0,20,0,-63,-63,0,0,-41,119,0,0,96,96,0,103,84,6,0,0,92,-44,-30,-8,0,0,0,0,0,-56,-60,-40,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,-41,119,0,0,0,0,0,0,0,4,0,0,0,0,2,0,64,-128,0,0,32,0,0,-128,0,-52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-64,0,0,64,0,-88,0,0,0,2,0,0,70,73,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-63,0,0,0,4,0,84,-67,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-94,48,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,6,0,0,1,0,2,36,0,40,0,0,0,-56,-46,-43,-43,70,95,0,1,0,2,-7,-26,0,7,-60,-59,-45,0,0,-62,-42,-44,0,0,1,-87,2,43,0,0,-24,1,76,0,11,0,6,0,0,0,1,0,0,0,0,6,0,12,4,80,0,9,0,19,0,-13,64,0,0,0,16,0,3,97,-60,-61,-7,-26,92,-60,-24,-59,-63,-24,-25,0,9,0,8,70,73,0,-86,-89,0,6,0,20,-128,0,0,7,0,17,2,0,0,0,10,0,21,-56,-60,-40,0,-41,119,0,12,0,24,0,0,-56,-30,0,0,0,0,0,8,0,7,2,-40,70,73,0,5,0,26,2,0,38,80,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,3,0,8,0,3,1,2,-14,-29,-59,-30,-29,97,-42,-43,-59,97,-29,-26,-42,0,23,88,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,7,0,1,-44,-30,0,36,92,0,0,0,31,0,0,0,0,0,0,0,0,0,0,0,9,0,1,-45,-42,-43,-15,-15,-15,96,-15,-15,-15,96,-15,-15,-15,-15,0,37,104,0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,16,0,1,-29,96,-16,-8,-63,-41,-39,96,-10,-15,-43,-15,92,-44,-30,-8,0,69,104,0,0,0,64,0,0,0,0,0,0,0,0,4,0,0,14,0,1,-29,-59,64,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,96,-63,-29,64,-29,-59,-30,-29,97,-42,64,-10,-15,-43,-15,92,-44,-30,-8,64,-15,-8,-16,-8,97,-16,-8,-63,-41,-39,92,-55,0,69,104,0,0,0,64,0,0,0,0,0,0,0,0,4,0,0,15,0,1,-29,-59,64,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,96,-63,-29,64,-29,-59,-30,-29,97,-29,64,-10,-15,-43,-15,92,-44,-30,-8,64,-15,-8,-16,-8,97,-16,-8,-63,-41,-39,92,-55,0,31,112,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,10,0,1,-15,-14,-13,-12,-11,-10,-9,-8,-7,-16,0,31,116,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,4,0,2,1,-29,0,0,-63,-60,-29,0,0,0,0,31,116,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,5,0,2,2,-29,0,0,-63,-60,-29,0,0,0,0,78,-120,0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,17,0,-30,-30,-39,64,0,0,0,0,2,1,-30,-30,-39,64,-29,-46,-43,-59,64,-7,-26,64,-56,-46,-15,64,-60,-59,-45,-62,-42,-44,-16,-13,-13,-14,-24,-13,-16,-63,-41,-39,97,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,-61,-15,0,78,-120,0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,18,0,-30,-30,-39,64,0,0,0,0,2,2,-30,-30,-39,64,-29,-46,-43,-59,64,-7,-26,64,-56,-46,-15,64,-60,-59,-45,-62,-42,-44,-16,-13,-13,-14,-24,-13,-16,-63,-41,-39,97,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,-61,-15,0,89,-88,0,0,0,84,0,0,0,0,0,0,0,0,4,0,0,12,0,1,64,64,-7,-26,91,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,97,64,64,64,64,75,-16,-16,97,-57,-62,-41,64,64,-14,-10,-14,75,-16,-16,97,64,64,-15,-9,75,-10,-16,97,-42,-43,-59,97,-61,-63,64,-15,75,-15,-29,-59,-30,-29,64,-42,-43,-59,97,-15,97,-58,97,-59,0,89,-88,0,0,0,84,0,0,0,0,0,0,0,0,4,0,0,13,0,1,64,64,-7,-26,91,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,97,64,64,64,64,75,-16,-16,97,-57,-62,-41,64,64,-14,-10,-14,75,-16,-16,97,64,64,-15,-9,75,-10,-16,97,-42,-43,-59,97,-61,-63,64,-15,75,-14,-29,-59,-30,-29,64,-29,-26,-42,97,-15,97,-58,97,-59}
+  customServiceData={80,0,3,0,0,2}
+  previousPnrDataInterchange=<null>
+  actualPnrDataInterchange=<null>
+  requestVersion=2
+]
+12:12:23,312 DEBUG [PnrBuilderDataProviderService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Service Context AthXML: <?xml version="1.0" encoding="UTF-8"?><ath createTime="-3547539549360721757" directoryID="0" sessionMgrContextName="Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/" sessionMgrDirectName="ICESMS\/STSB" sessionMgrLBName="ICESMSLB\/STS.LB" sessionRecordID="1884961"><version major="1" minor="5"/><ATHString>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0</ATHString><loggingContext appLevel="1" auditLevel="1" billingLevel="1" metricsLevel="1" securityLevel="1"/><securityContext><user affiliationcode="1" branch="0" domain="AA" group="AAS" id="218329" station="0"/></securityContext><sessionContext activeTimeout="0" createTime="1428512304" idleTimeout="1800" lastModifiedTime="1428513126" sequenceNumber="0" transactionID="0"><sessionVersion major="1" minor="0"/><tpfSession tpfClusterName="access.tsts.sabre.com" tpfIsConfigOverridden="false" tpfIsIceCreated="false" tpfLniata="6771718" hexLniata="675406" tpfLockID="280080707" tpfPoolType="0" tpfProfileCity="" tpfProfileCode="" tpfProfileKey="" tpfProfileName="HDQTSG" tpfProtocol="HSSP" tpfEnterprise="SABRE"/></sessionContext></ath>
+12:12:23,312 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Handling request: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRQ@28fc1ee0[
+  action=INDIRECT_CANCEL
+  athXml=<?xml version="1.0" encoding="UTF-8"?><ath createTime="-3547539549360721757" directoryID="0" sessionMgrContextName="Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/" sessionMgrDirectName="ICESMS\/STSB" sessionMgrLBName="ICESMSLB\/STS.LB" sessionRecordID="1884961"><version major="1" minor="5"/><ATHString>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0</ATHString><loggingContext appLevel="1" auditLevel="1" billingLevel="1" metricsLevel="1" securityLevel="1"/><securityContext><user affiliationcode="1" branch="0" domain="AA" group="AAS" id="218329" station="0"/></securityContext><sessionContext activeTimeout="0" createTime="1428512304" idleTimeout="1800" lastModifiedTime="1428513126" sequenceNumber="0" transactionID="0"><sessionVersion major="1" minor="0"/><tpfSession tpfClusterName="access.tsts.sabre.com" tpfIsConfigOverridden="false" tpfIsIceCreated="false" tpfLniata="6771718" hexLniata="675406" tpfLockID="280080707" tpfPoolType="0" tpfProfileCity="" tpfProfileCode="" tpfProfileKey="" tpfProfileName="HDQTSG" tpfProtocol="HSSP" tpfEnterprise="SABRE"/></sessionContext></ath>
+  agentEntryInput=<null>
+  pnrBytes={1,64,32,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,32,0,0,-56,-30,-43,-60,-28,-39,0,0,0,0,12,30,69,-106,0,0,70,73,12,8,70,110,5,0,-50,-60,-99,-40,93,-66,57,-95,70,73,0,2,0,0,0,20,0,-63,-63,0,0,-41,119,0,0,96,96,0,103,84,6,0,0,92,-44,-30,-8,0,0,0,0,0,-56,-60,-40,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,-41,119,0,0,0,0,0,0,0,4,0,0,0,0,2,0,64,-128,0,0,32,0,0,-128,0,-52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-64,0,0,64,0,-88,0,0,0,2,0,0,70,73,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-63,0,0,0,4,0,84,-67,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-94,48,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,6,0,0,1,0,2,36,0,40,0,0,0,-56,-46,-43,-43,70,95,0,1,0,2,-7,-26,0,7,-60,-59,-45,0,0,-62,-42,-44,0,0,1,-87,2,43,0,0,-24,1,76,0,11,0,6,0,0,0,1,0,0,0,0,6,0,12,4,80,0,9,0,19,0,-13,64,0,0,0,16,0,3,97,-60,-61,-7,-26,92,-60,-24,-59,-63,-24,-25,0,9,0,8,70,73,0,-86,-89,0,6,0,20,-128,0,0,7,0,17,2,0,0,0,10,0,21,-56,-60,-40,0,-41,119,0,12,0,24,0,0,-56,-30,0,0,0,0,0,8,0,7,2,-40,70,73,0,5,0,26,2,0,38,80,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,3,0,8,0,3,1,2,-14,-29,-59,-30,-29,97,-42,-43,-59,97,-29,-26,-42,0,23,88,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,7,0,1,-44,-30,0,36,92,0,0,0,31,0,0,0,0,0,0,0,0,0,0,0,9,0,1,-45,-42,-43,-15,-15,-15,96,-15,-15,-15,96,-15,-15,-15,-15,0,37,104,0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,16,0,1,-29,96,-16,-8,-63,-41,-39,96,-10,-15,-43,-15,92,-44,-30,-8,0,69,104,0,0,0,64,0,0,0,0,0,0,0,0,4,0,0,14,0,1,-29,-59,64,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,96,-63,-29,64,-29,-59,-30,-29,97,-42,64,-10,-15,-43,-15,92,-44,-30,-8,64,-15,-8,-16,-8,97,-16,-8,-63,-41,-39,92,-55,0,69,104,0,0,0,64,0,0,0,0,0,0,0,0,4,0,0,15,0,1,-29,-59,64,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,96,-63,-29,64,-29,-59,-30,-29,97,-29,64,-10,-15,-43,-15,92,-44,-30,-8,64,-15,-8,-16,-8,97,-16,-8,-63,-41,-39,92,-55,0,31,112,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,10,0,1,-15,-14,-13,-12,-11,-10,-9,-8,-7,-16,0,31,116,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,4,0,2,1,-29,0,0,-63,-60,-29,0,0,0,0,31,116,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,5,0,2,2,-29,0,0,-63,-60,-29,0,0,0,0,78,-120,0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,17,0,-30,-30,-39,64,0,0,0,0,2,1,-30,-30,-39,64,-29,-46,-43,-59,64,-7,-26,64,-56,-46,-15,64,-60,-59,-45,-62,-42,-44,-16,-13,-13,-14,-24,-13,-16,-63,-41,-39,97,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,-61,-15,0,78,-120,0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,18,0,-30,-30,-39,64,0,0,0,0,2,2,-30,-30,-39,64,-29,-46,-43,-59,64,-7,-26,64,-56,-46,-15,64,-60,-59,-45,-62,-42,-44,-16,-13,-13,-14,-24,-13,-16,-63,-41,-39,97,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,-61,-15,0,89,-88,0,0,0,84,0,0,0,0,0,0,0,0,4,0,0,12,0,1,64,64,-7,-26,91,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,97,64,64,64,64,75,-16,-16,97,-57,-62,-41,64,64,-14,-10,-14,75,-16,-16,97,64,64,-15,-9,75,-10,-16,97,-42,-43,-59,97,-61,-63,64,-15,75,-15,-29,-59,-30,-29,64,-42,-43,-59,97,-15,97,-58,97,-59,0,89,-88,0,0,0,84,0,0,0,0,0,0,0,0,4,0,0,13,0,1,64,64,-7,-26,91,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,97,64,64,64,64,75,-16,-16,97,-57,-62,-41,64,64,-14,-10,-14,75,-16,-16,97,64,64,-15,-9,75,-10,-16,97,-42,-43,-59,97,-61,-63,64,-15,75,-14,-29,-59,-30,-29,64,-29,-26,-42,97,-15,97,-58,97,-59}
+  customServiceData={80,0,3,0,0,2}
+  previousPnrDataInterchange=<null>
+  actualPnrDataInterchange=<null>
+  requestVersion=2
+]
+12:12:23,312 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [call] Entering. Action: INDIRECT_CANCEL
+12:12:23,312 DEBUG [ThreadScopeAttributes] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Performing destruction callback for 'scopedTarget.serviceContext' bean on thread 'Pss-PnrSvc--MOM-Consumer-Thread-0'.
+12:12:23,313 DEBUG [HeaderParser] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Parsing expanded part of the header.
+12:12:23,313 DEBUG [HeaderParser] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Open System Timestamp DF bytes are zeros, writing null to headerData
+12:12:23,313 DEBUG [HeaderData] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) The given Date is null, setting zero
+12:12:23,313 DEBUG [HeaderData] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering setCollaborationId
+12:12:23,314 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AthXml=<?xml version="1.0" encoding="UTF-8"?><ath createTime="-3547539549360721757" directoryID="0" sessionMgrContextName="Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/" sessionMgrDirectName="ICESMS\/STSB" sessionMgrLBName="ICESMSLB\/STS.LB" sessionRecordID="1884961"><version major="1" minor="5"/><ATHString>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0</ATHString><loggingContext appLevel="1" auditLevel="1" billingLevel="1" metricsLevel="1" securityLevel="1"/><securityContext><user affiliationcode="1" branch="0" domain="AA" group="AAS" id="218329" station="0"/></securityContext><sessionContext activeTimeout="0" createTime="1428512304" idleTimeout="1800" lastModifiedTime="1428513126" sequenceNumber="0" transactionID="0"><sessionVersion major="1" minor="0"/><tpfSession tpfClusterName="access.tsts.sabre.com" tpfIsConfigOverridden="false" tpfIsIceCreated="false" tpfLniata="6771718" hexLniata="675406" tpfLockID="280080707" tpfPoolType="0" tpfProfileCity="" tpfProfileCode="" tpfProfileKey="" tpfProfileName="HDQTSG" tpfProtocol="HSSP" tpfEnterprise="SABRE"/></sessionContext></ath>
+12:12:23,314 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AthXml available: true
+12:12:23,314 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: []
+12:12:23,314 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Security policy available: true
+12:12:23,314 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:false
+12:12:23,314 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: []
+12:12:23,314 DEBUG [IceSessionServiceContextSetter] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) about to create session from athXml
+12:12:23,314 DEBUG [IceSessionServiceContextSetter] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) athXml<?xml version="1.0" encoding="UTF-8"?><ath createTime="-3547539549360721757" directoryID="0" sessionMgrContextName="Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/" sessionMgrDirectName="ICESMS\/STSB" sessionMgrLBName="ICESMSLB\/STS.LB" sessionRecordID="1884961"><version major="1" minor="5"/><ATHString>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0</ATHString><loggingContext appLevel="1" auditLevel="1" billingLevel="1" metricsLevel="1" securityLevel="1"/><securityContext><user affiliationcode="1" branch="0" domain="AA" group="AAS" id="218329" station="0"/></securityContext><sessionContext activeTimeout="0" createTime="1428512304" idleTimeout="1800" lastModifiedTime="1428513126" sequenceNumber="0" transactionID="0"><sessionVersion major="1" minor="0"/><tpfSession tpfClusterName="access.tsts.sabre.com" tpfIsConfigOverridden="false" tpfIsIceCreated="false" tpfLniata="6771718" hexLniata="675406" tpfLockID="280080707" tpfPoolType="0" tpfProfileCity="" tpfProfileCode="" tpfProfileKey="" tpfProfileName="HDQTSG" tpfProtocol="HSSP" tpfEnterprise="SABRE"/></sessionContext></ath>
+12:12:23,320 DEBUG [IceSessionServiceContextSetter] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) session created from athXml
+12:12:23,320 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Session available: true
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Action  = null AthId = null AthXml <?xml version="1.0" encoding="UTF-8"?><ath createTime="-3547539549360721757" directoryID="0" sessionMgrContextName="Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/" sessionMgrDirectName="ICESMS\/STSB" sessionMgrLBName="ICESMSLB\/STS.LB" sessionRecordID="1884961"><version major="1" minor="5"/><ATHString>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0</ATHString><loggingContext appLevel="1" auditLevel="1" billingLevel="1" metricsLevel="1" securityLevel="1"/><securityContext><user affiliationcode="1" branch="0" domain="AA" group="AAS" id="218329" station="0"/></securityContext><sessionContext activeTimeout="0" createTime="1428512304" idleTimeout="1800" lastModifiedTime="1428513126" sequenceNumber="0" transactionID="0"><sessionVersion major="1" minor="0"/><tpfSession tpfClusterName="access.tsts.sabre.com" tpfIsConfigOverridden="false" tpfIsIceCreated="false" tpfLniata="6771718" hexLniata="675406" tpfLockID="280080707" tpfPoolType="0" tpfProfileCity="" tpfProfileCode="" tpfProfileKey="" tpfProfileName="HDQTSG" tpfProtocol="HSSP" tpfEnterprise="SABRE"/></sessionContext></ath> Lniata null
+12:12:23,320 DEBUG [ServiceContextImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) set value: USE_ATH: true
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,320 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AthId: Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/STSB!ICESMSLB\/STS.LB!-3547539549360721757!1884961!0!3!E2E-1
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,320 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AgencyPCC: 61N1
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,320 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) HomeCityCode: HDQ
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AgencySine: MS8
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Client: 6771718
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Branch: 0
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,321 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AaaArea: A
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [call] Gathering parameters...
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [prepareAction] Looking for an action for INDIRECT_CANCEL
+12:12:23,321 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [call] Performing the action...
+12:12:23,321 DEBUG [OpenReservationUpdateContextBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering buildContext(..).
+12:12:23,321 DEBUG [OpenReservationUpdateContextBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Invoking ResolveServiceData...
+12:12:23,321 DEBUG [IndirectCancelDataResolver] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [resolve] Processing indirectCancelData=[500003000002]
+12:12:23,322 DEBUG [IndirectCancelDataBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform]IndirectCancelData: 
+ partOfDivide: true
+ type: PASSENGER
+ items: [2]
+
+12:12:23,322 DEBUG [OpenReservationUpdateContextBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Invoking UpdateResRQ builder...
+12:12:23,322 DEBUG [DefaultOpenReservationContextBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering DefaultOpenReservationContextBuilder...
+12:12:23,322 DEBUG [UpdateReservationRQBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering build(..).
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering canProcess
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering canProcess
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering canProcess
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering canProcess
+12:12:23,322 DEBUG [AbstractReservationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 INFO  [PNRDataInterchangeBuilderFromDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [sortInterchanges] status: false
+12:12:23,322 INFO  [PNRDataInterchangeBuilderFromDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform]  buildData is null or empty
+12:12:23,322 INFO  [PNRDataInterchangeBuilderFromDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [sortInterchanges] status: false
+12:12:23,322 INFO  [PNRDataInterchangeBuilderFromDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform]  buildData is null or empty
+12:12:23,322 DEBUG [AssociationUpdatesBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PreviousPnrDataInterchangeList: []
+12:12:23,322 DEBUG [AssociationUpdatesBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) ActualPnrDataInterchangeList: []
+12:12:23,322 DEBUG [PreviousInterchangeAssociationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering buildUpdate
+12:12:23,322 DEBUG [AbstractAssociationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AbstractAssociationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AbstractAssociationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AbstractAssociationUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting canProcess. result = false
+12:12:23,322 DEBUG [AssociationUpdatesBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) All association updates: 0
+12:12:23,322 DEBUG [UpdateReservationRQBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Request has been built: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.UpdateReservationRQ@77a45dc5[
+  requestType=Stateful
+  returnOptions=<null>
+  reservation=<null>
+  reservationUpdateList=com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.ReservationUpdateListType@48086de0[
+  locator=<null>
+  reservationUpdateItem=[]
+  changeNbrInParty=<null>
+  receivedFrom=<null>
+]
+  associationUpdate=[]
+  updateToken=<null>
+  pnrContent=com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.UpdateReservationRQ$PnrContent@2165b212[
+  rawContent={1,64,32,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,32,0,0,-56,-30,-43,-60,-28,-39,0,0,0,0,12,30,69,-106,0,0,70,73,12,8,70,110,5,0,-50,-60,-99,-40,93,-66,57,-95,70,73,0,2,0,0,0,20,0,-63,-63,0,0,-41,119,0,0,96,96,0,103,84,6,0,0,92,-44,-30,-8,0,0,0,0,0,-56,-60,-40,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,-41,119,0,0,0,0,0,0,0,4,0,0,0,0,2,0,64,-128,0,0,32,0,0,-128,0,-52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-64,0,0,64,0,-88,0,0,0,2,0,0,70,73,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-63,0,0,0,4,0,84,-67,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-94,48,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,6,0,0,1,0,2,36,0,40,0,0,0,-56,-46,-43,-43,70,95,0,1,0,2,-7,-26,0,7,-60,-59,-45,0,0,-62,-42,-44,0,0,1,-87,2,43,0,0,-24,1,76,0,11,0,6,0,0,0,1,0,0,0,0,6,0,12,4,80,0,9,0,19,0,-13,64,0,0,0,16,0,3,97,-60,-61,-7,-26,92,-60,-24,-59,-63,-24,-25,0,9,0,8,70,73,0,-86,-89,0,6,0,20,-128,0,0,7,0,17,2,0,0,0,10,0,21,-56,-60,-40,0,-41,119,0,12,0,24,0,0,-56,-30,0,0,0,0,0,8,0,7,2,-40,70,73,0,5,0,26,2,0,38,80,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,3,0,8,0,3,1,2,-14,-29,-59,-30,-29,97,-42,-43,-59,97,-29,-26,-42,0,23,88,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,7,0,1,-44,-30,0,36,92,0,0,0,31,0,0,0,0,0,0,0,0,0,0,0,9,0,1,-45,-42,-43,-15,-15,-15,96,-15,-15,-15,96,-15,-15,-15,-15,0,37,104,0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,16,0,1,-29,96,-16,-8,-63,-41,-39,96,-10,-15,-43,-15,92,-44,-30,-8,0,69,104,0,0,0,64,0,0,0,0,0,0,0,0,4,0,0,14,0,1,-29,-59,64,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,96,-63,-29,64,-29,-59,-30,-29,97,-42,64,-10,-15,-43,-15,92,-44,-30,-8,64,-15,-8,-16,-8,97,-16,-8,-63,-41,-39,92,-55,0,69,104,0,0,0,64,0,0,0,0,0,0,0,0,4,0,0,15,0,1,-29,-59,64,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,96,-63,-29,64,-29,-59,-30,-29,97,-29,64,-10,-15,-43,-15,92,-44,-30,-8,64,-15,-8,-16,-8,97,-16,-8,-63,-41,-39,92,-55,0,31,112,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,10,0,1,-15,-14,-13,-12,-11,-10,-9,-8,-7,-16,0,31,116,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,4,0,2,1,-29,0,0,-63,-60,-29,0,0,0,0,31,116,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,5,0,2,2,-29,0,0,-63,-60,-29,0,0,0,0,78,-120,0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,17,0,-30,-30,-39,64,0,0,0,0,2,1,-30,-30,-39,64,-29,-46,-43,-59,64,-7,-26,64,-56,-46,-15,64,-60,-59,-45,-62,-42,-44,-16,-13,-13,-14,-24,-13,-16,-63,-41,-39,97,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,-61,-15,0,78,-120,0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,18,0,-30,-30,-39,64,0,0,0,0,2,2,-30,-30,-39,64,-29,-46,-43,-59,64,-7,-26,64,-56,-46,-15,64,-60,-59,-45,-62,-42,-44,-16,-13,-13,-14,-24,-13,-16,-63,-41,-39,97,-11,-8,-7,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,-61,-15,0,89,-88,0,0,0,84,0,0,0,0,0,0,0,0,4,0,0,12,0,1,64,64,-7,-26,91,-7,-16,-11,-14,-9,-13,-15,-10,-12,-7,97,64,64,64,64,75,-16,-16,97,-57,-62,-41,64,64,-14,-10,-14,75,-16,-16,97,64,64,-15,-9,75,-10,-16,97,-42,-43,-59,97,-61,-63,64,-15,75,-15,-29,-59,-30,-29,64,-42,-43,-59,97,-15,97,-58,97,-59,0,89,-88,0,0,0,84,0,0,0,0,0,0,0,0,4,0,0,13,0,1,64,64,-7,-26,91,-7,-16,-11,-14,-9,-13,-15,-10,-11,-16,97,64,64,64,64,75,-16,-16,97,-57,-62,-41,64,64,-14,-10,-14,75,-16,-16,97,64,64,-15,-9,75,-10,-16,97,-42,-43,-59,97,-61,-63,64,-15,75,-14,-29,-59,-30,-29,64,-29,-26,-42,97,-15,97,-58,97,-59}
+]
+  partition=<null>
+  version=<null>
+  echoToken=<null>
+]
+12:12:23,322 DEBUG [UpdateReservationRQBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting build(..).
+12:12:23,322 DEBUG [IndirectCancelDataResolver] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) All parents to delete: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.AssociationUpdatePNRB@1b8dccdf[
+  parent=[com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.AssociationParent@7a85529a[
+  reference=2
+  type=NAME_SEQ_ID
+]]
+  child=<null>
+  op=DELETE
+]
+12:12:23,322 INFO  [PNRDataInterchangeBuilderFromDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [sortInterchanges] status: false
+12:12:23,322 INFO  [PNRDataInterchangeBuilderFromDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform]  buildData is null or empty
+12:12:23,322 DEBUG [OpenReservationUpdateContextBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting buildContext(..).
+12:12:23,322 DEBUG [PnrBuilderIndirectCancelAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [doPerform] Entering.
+12:12:23,322 DEBUG [PnrBuilderIndirectCancelAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [doPerform] dataType: PASSENGER
+12:12:23,322 DEBUG [PnrBuilderIndirectCancelAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [doPerform] Delegating processing to a ReduceAction...
+12:12:23,322 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [perform] Entering.
+12:12:23,322 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [perform] Calling a service...
+12:12:23,322 DEBUG [PnrBuilderPassengerIndirectCancelReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [callService] Calling ReservationOrchestration...
+12:12:23,322 DEBUG [HeaderParser] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Parsing expanded part of the header.
+12:12:23,322 DEBUG [HeaderParser] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Open System Timestamp DF bytes are zeros, writing null to headerData
+12:12:23,322 DEBUG [HeaderData] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) The given Date is null, setting zero
+12:12:23,322 DEBUG [HeaderData] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering setCollaborationId
+12:12:23,324 DEBUG [ReservationOrchestration] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering retrieveOpenReservationCart.
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering createOrRetrieveCart(pnrTree, historyEnabled).
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) CID: null
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering createCart
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) createNewCartRequest : entering
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) createNewCartRequest : createCartRQ with locator (locator=HSNDUR; createDate=Wed Apr 08 12:08:00 CDT 2015
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) createNewCartRequest : exiting
+12:12:23,324 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PDS RQ action: [OpenResCartCreateRQ] content: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:OpenResCartCreateRQ Version="1.1" xmlns:ns2="http://pds.tds.sabre.com/Services" xmlns:ns4="http://services.sabre.com/res/ores/v0" xmlns:ns3="http://services.sabre.com/res/ortl/v0" xmlns:ns5="http://pnrds.tds.sabre.com/Services/v2" xmlns:ns6="http://pnrds.tds.sabre.com/Metadata" xmlns:ns7="http://pnrds.tds.sabre.com/Services" xmlns:ns8="http://webservices.sabre.com/pnrconn/ReaccSearch">
+    <ns2:Locator Locator="HSNDUR" CreateDate="2015-04-08"/>
+</ns2:OpenResCartCreateRQ>
+
+12:12:23,324 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] request context:
+messageID = null,refToMessageID = null,replyTo = null,client id = null, MOM_ENCODING_TYPE = UTF-8, Action = OpenResCartCreateRQ, PDS_SCHEMA_VERSION = 2.0, exception = null
+12:12:23,324 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] request payload size: 537
+12:12:23,324 DEBUG [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) 
+---- pdsRetrieveMomService - request ----
+Len  -                 Hex                        ASCII               SABRE
+---- - -----------------------------------  ------------------  ------------------
+0000 - 3C3F786D 6C207665 7273696F 6E3D2231  |<?xml version="1|  |..._%......?>...|
+0010 - 2E302220 656E636F 64696E67 3D225554  |.0" encoding="UT|  |.....>.?..>.....|
+0020 - 462D3822 20737461 6E64616C 6F6E653D  |F-8" standalone=|  |......./>./%?>..|
+0030 - 22796573 223F3E0A 3C6E7332 3A4F7065  |"yes"?>.<ns2:Ope|  |.`.......>......|
+0040 - 6E526573 43617274 43726561 74655251  |nResCartCreateRQ|  |>..../...../....|
+0050 - 20566572 73696F6E 3D22312E 31222078  | Version="1.1" x|  |......?>........|
+0060 - 6D6C6E73 3A6E7332 3D226874 74703A2F  |mlns:ns2="http:/|  |_%>..>..........|
+0070 - 2F706473 2E746473 2E736162 72652E63  |/pds.tds.sabre.c|  |........../.....|
+0080 - 6F6D2F53 65727669 63657322 20786D6C  |om/Services" xml|  |?_............_%|
+0090 - 6E733A6E 73343D22 68747470 3A2F2F73  |ns:ns4="http://s|  |>..>............|
+00A0 - 65727669 6365732E 73616272 652E636F  |ervices.sabre.co|  |........./.....?|
+00B0 - 6D2F7265 732F6F72 65732F76 30222078  |m/res/ores/v0" x|  |_.....?.........|
+00C0 - 6D6C6E73 3A6E7333 3D226874 74703A2F  |mlns:ns3="http:/|  |_%>..>..........|
+00D0 - 2F736572 76696365 732E7361 6272652E  |/services.sabre.|  |.........../....|
+00E0 - 636F6D2F 7265732F 6F72746C 2F763022  |com/res/ortl/v0"|  |.?_.....?..%....|
+00F0 - 20786D6C 6E733A6E 73353D22 68747470  | xmlns:ns5="http|  |.._%>..>........|
+0100 - 3A2F2F70 6E726473 2E746473 2E736162  |://pnrds.tds.sab|  |....>........./.|
+ -- truncated: 281 bytes
+12:12:23,431 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] response context:
+messageID = ID:ltxl1016.sgdcelab.sabre.com-5XXXXXXXXXXXX41376-6:1:4:5:10,refToMessageID = 3b9acbdb,replyTo = null,client id = ID:0a0ee82879a7ddf9e40105d1e40105d173fea2a673fea2a6, MOM_ENCODING_TYPE = UTF-8, MOM_MESSAGE_TYPE = reply, isCorrectResponse = true, MOM_MSG_ID = 3b9acbdb, exception = null
+12:12:23,431 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] response payload size: 4273
+12:12:23,431 DEBUG [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) 
+---- pdsRetrieveMomService - response ----
+Len  -                 Hex                        ASCII               SABRE
+---- - -----------------------------------  ------------------  ------------------
+0000 - 3C3F786D 6C207665 7273696F 6E3D2231  |<?xml version="1|  |..._%......?>...|
+0010 - 2E302220 656E636F 64696E67 3D225554  |.0" encoding="UT|  |.....>.?..>.....|
+0020 - 462D3822 20737461 6E64616C 6F6E653D  |F-8" standalone=|  |......./>./%?>..|
+0030 - 22796573 223F3E0A 3C6E7334 3A4F7065  |"yes"?>.<ns4:Ope|  |.`.......>......|
+0040 - 6E526573 43617274 43726561 74655253  |nResCartCreateRS|  |>..../...../....|
+0050 - 20566572 73696F6E 3D22312E 31222078  | Version="1.1" x|  |......?>........|
+0060 - 6D6C6E73 3A6E7332 3D226874 74703A2F  |mlns:ns2="http:/|  |_%>..>..........|
+0070 - 2F736572 76696365 732E7361 6272652E  |/services.sabre.|  |.........../....|
+0080 - 636F6D2F 7265732F 6F72746C 2F763022  |com/res/ortl/v0"|  |.?_.....?..%....|
+0090 - 20786D6C 6E733D22 68747470 3A2F2F70  | xmlns="http://p|  |.._%>...........|
+00A0 - 6E726473 2E746473 2E736162 72652E63  |nrds.tds.sabre.c|  |>........./.....|
+00B0 - 6F6D2F53 65727669 63657322 20786D6C  |om/Services" xml|  |?_............_%|
+00C0 - 6E733A6E 73343D22 68747470 3A2F2F70  |ns:ns4="http://p|  |>..>............|
+00D0 - 64732E74 64732E73 61627265 2E636F6D  |ds.tds.sabre.com|  |......../.....?_|
+00E0 - 2F536572 76696365 73222078 6D6C6E73  |/Services" xmlns|  |............_%>.|
+00F0 - 3A6E7333 3D226874 74703A2F 2F736572  |:ns3="http://ser|  |.>..............|
+0100 - 76696365 732E7361 6272652E 636F6D2F  |vices.sabre.com/|  |......./.....?_.|
+ -- truncated: 4017 bytes
+12:12:23,431 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] elapsed time: 107ms
+12:12:23,431 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PDS RS: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:OpenResCartCreateRS Version="1.1" xmlns:ns2="http://services.sabre.com/res/ortl/v0" xmlns="http://pnrds.tds.sabre.com/Services" xmlns:ns4="http://pds.tds.sabre.com/Services" xmlns:ns3="http://services.sabre.com/res/ores/v0" xmlns:ns5="http://pnrds.tds.sabre.com/Services/v2">
+    <ns4:Success>true</ns4:Success>
+    <ns3:OpenReservationCart>
+        <ns2:CorrelationId>a71589562c8bc29f</ns2:CorrelationId>
+        <ns2:OpenRes>
+            <ns2:Id>f503855a-1abd-4596-a7ad-3a6d8d7ef9f2</ns2:Id>
+            <ns2:Locator>HSNDUR</ns2:Locator>
+            <ns2:CreateDate>2015-04-08</ns2:CreateDate>
+            <ns2:Header>
+                <ns2:SequenceNumber>3</ns2:SequenceNumber>
+            </ns2:Header>
+            <ns2:ChangeIndicators>
+                <ns2:FOPUpdated>false</ns2:FOPUpdated>
+                <ns2:AssociationUpdated>true</ns2:AssociationUpdated>
+                <ns2:ProductUpdated>false</ns2:ProductUpdated>
+            </ns2:ChangeIndicators>
+            <ns2:AssociationMatrix>
+                <ns2:Id>13969c49-16e2-4991-b772-5c8f7238f3e5</ns2:Id>
+                <ns2:Association>
+                    <ns2:AssociationParent>
+                        <ns2:Id>d2f86d25-32cd-4032-8ee3-1be82ca4749f</ns2:Id>
+                        <ns2:Type>PersonIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>1</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationParent>
+                    <ns2:AssociationChild>
+                        <ns2:Id>3c471d20-7156-4d2e-bfe9-c435c8cdc3be</ns2:Id>
+                        <ns2:Type>AccountingLineIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>12</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                    <ns2:AssociationChild>
+                        <ns2:Id>488dca82-fa0f-43c3-b1d4-a477e77f35f8</ns2:Id>
+                        <ns2:Type>TicketingIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>14</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                </ns2:Association>
+                <ns2:Association>
+                    <ns2:AssociationParent>
+                        <ns2:Id>399bf4b0-946c-4a52-8c42-5d78a47fffb5</ns2:Id>
+                        <ns2:Type>PersonIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>2</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationParent>
+                    <ns2:AssociationChild>
+                        <ns2:Id>5435b922-8d34-4aa0-a1e4-d1069bf85fdd</ns2:Id>
+                        <ns2:Type>AccountingLineIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>13</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                    <ns2:AssociationChild>
+                        <ns2:Id>3224d4dc-5129-4906-8c04-566c1ac0c240</ns2:Id>
+                        <ns2:Type>TicketingIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>15</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                </ns2:Association>
+            </ns2:AssociationMatrix>
+        </ns2:OpenRes>
+        <ns2:OpenResTimestamp>2015-04-08T12:08:33.687</ns2:OpenResTimestamp>
+    </ns3:OpenReservationCart>
+</ns4:OpenResCartCreateRS>
+
+12:12:23,431 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Before transformation:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:OpenResCartCreateRS Version="1.1" xmlns:ns2="http://services.sabre.com/res/ortl/v0" xmlns="http://pnrds.tds.sabre.com/Services" xmlns:ns4="http://pds.tds.sabre.com/Services" xmlns:ns3="http://services.sabre.com/res/ores/v0" xmlns:ns5="http://pnrds.tds.sabre.com/Services/v2">
+    <ns4:Success>true</ns4:Success>
+    <ns3:OpenReservationCart>
+        <ns2:CorrelationId>a71589562c8bc29f</ns2:CorrelationId>
+        <ns2:OpenRes>
+            <ns2:Id>f503855a-1abd-4596-a7ad-3a6d8d7ef9f2</ns2:Id>
+            <ns2:Locator>HSNDUR</ns2:Locator>
+            <ns2:CreateDate>2015-04-08</ns2:CreateDate>
+            <ns2:Header>
+                <ns2:SequenceNumber>3</ns2:SequenceNumber>
+            </ns2:Header>
+            <ns2:ChangeIndicators>
+                <ns2:FOPUpdated>false</ns2:FOPUpdated>
+                <ns2:AssociationUpdated>true</ns2:AssociationUpdated>
+                <ns2:ProductUpdated>false</ns2:ProductUpdated>
+            </ns2:ChangeIndicators>
+            <ns2:AssociationMatrix>
+                <ns2:Id>13969c49-16e2-4991-b772-5c8f7238f3e5</ns2:Id>
+                <ns2:Association>
+                    <ns2:AssociationParent>
+                        <ns2:Id>d2f86d25-32cd-4032-8ee3-1be82ca4749f</ns2:Id>
+                        <ns2:Type>PersonIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>1</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationParent>
+                    <ns2:AssociationChild>
+                        <ns2:Id>3c471d20-7156-4d2e-bfe9-c435c8cdc3be</ns2:Id>
+                        <ns2:Type>AccountingLineIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>12</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                    <ns2:AssociationChild>
+                        <ns2:Id>488dca82-fa0f-43c3-b1d4-a477e77f35f8</ns2:Id>
+                        <ns2:Type>TicketingIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>14</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                </ns2:Association>
+                <ns2:Association>
+                    <ns2:AssociationParent>
+                        <ns2:Id>399bf4b0-946c-4a52-8c42-5d78a47fffb5</ns2:Id>
+                        <ns2:Type>PersonIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>2</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationParent>
+                    <ns2:AssociationChild>
+                        <ns2:Id>5435b922-8d34-4aa0-a1e4-d1069bf85fdd</ns2:Id>
+                        <ns2:Type>AccountingLineIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>13</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                    <ns2:AssociationChild>
+                        <ns2:Id>3224d4dc-5129-4906-8c04-566c1ac0c240</ns2:Id>
+                        <ns2:Type>TicketingIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>15</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                </ns2:Association>
+            </ns2:AssociationMatrix>
+        </ns2:OpenRes>
+        <ns2:OpenResTimestamp>2015-04-08T12:08:33.687</ns2:OpenResTimestamp>
+    </ns3:OpenReservationCart>
+</ns4:OpenResCartCreateRS>
+
+12:12:23,431 DEBUG [GreedyPatternMatchingMapper] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Returning: null
+12:12:23,431 DEBUG [OpenReservationTransformer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) SourceVersion is blank: [null], skipping transformation
+12:12:23,431 INFO  [OpenReservationTransformer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Transformation [null] -> [1.1] not applicable, returning original input.
+12:12:23,431 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) After transformation:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:OpenResCartCreateRS Version="1.1" xmlns:ns2="http://services.sabre.com/res/ortl/v0" xmlns="http://pnrds.tds.sabre.com/Services" xmlns:ns4="http://pds.tds.sabre.com/Services" xmlns:ns3="http://services.sabre.com/res/ores/v0" xmlns:ns5="http://pnrds.tds.sabre.com/Services/v2">
+    <ns4:Success>true</ns4:Success>
+    <ns3:OpenReservationCart>
+        <ns2:CorrelationId>a71589562c8bc29f</ns2:CorrelationId>
+        <ns2:OpenRes>
+            <ns2:Id>f503855a-1abd-4596-a7ad-3a6d8d7ef9f2</ns2:Id>
+            <ns2:Locator>HSNDUR</ns2:Locator>
+            <ns2:CreateDate>2015-04-08</ns2:CreateDate>
+            <ns2:Header>
+                <ns2:SequenceNumber>3</ns2:SequenceNumber>
+            </ns2:Header>
+            <ns2:ChangeIndicators>
+                <ns2:FOPUpdated>false</ns2:FOPUpdated>
+                <ns2:AssociationUpdated>true</ns2:AssociationUpdated>
+                <ns2:ProductUpdated>false</ns2:ProductUpdated>
+            </ns2:ChangeIndicators>
+            <ns2:AssociationMatrix>
+                <ns2:Id>13969c49-16e2-4991-b772-5c8f7238f3e5</ns2:Id>
+                <ns2:Association>
+                    <ns2:AssociationParent>
+                        <ns2:Id>d2f86d25-32cd-4032-8ee3-1be82ca4749f</ns2:Id>
+                        <ns2:Type>PersonIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>1</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationParent>
+                    <ns2:AssociationChild>
+                        <ns2:Id>3c471d20-7156-4d2e-bfe9-c435c8cdc3be</ns2:Id>
+                        <ns2:Type>AccountingLineIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>12</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                    <ns2:AssociationChild>
+                        <ns2:Id>488dca82-fa0f-43c3-b1d4-a477e77f35f8</ns2:Id>
+                        <ns2:Type>TicketingIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>14</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                </ns2:Association>
+                <ns2:Association>
+                    <ns2:AssociationParent>
+                        <ns2:Id>399bf4b0-946c-4a52-8c42-5d78a47fffb5</ns2:Id>
+                        <ns2:Type>PersonIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>2</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationParent>
+                    <ns2:AssociationChild>
+                        <ns2:Id>5435b922-8d34-4aa0-a1e4-d1069bf85fdd</ns2:Id>
+                        <ns2:Type>AccountingLineIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>13</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                    <ns2:AssociationChild>
+                        <ns2:Id>3224d4dc-5129-4906-8c04-566c1ac0c240</ns2:Id>
+                        <ns2:Type>TicketingIDType</ns2:Type>
+                        <ns2:UniqueReference>
+                            <ns2:SourceSystem>PNRC</ns2:SourceSystem>
+                            <ns2:UniqueIdComponent>15</ns2:UniqueIdComponent>
+                        </ns2:UniqueReference>
+                    </ns2:AssociationChild>
+                </ns2:Association>
+            </ns2:AssociationMatrix>
+        </ns2:OpenRes>
+        <ns2:OpenResTimestamp>2015-04-08T12:08:33.687</ns2:OpenResTimestamp>
+    </ns3:OpenReservationCart>
+</ns4:OpenResCartCreateRS>
+
+12:12:23,434 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) exiting createCart
+12:12:23,434 DEBUG [HeaderData] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) entering setCollaborationId
+12:12:23,434 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Reservation cart: com.sabre.openres.ortl.OpenReservationCart@63dc2ea1[correlationId=a71589562c8bc29f, openRes=com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=3], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}],com.sabre.openres.ortl.AssociationType@ee3abdf[associationParent=com.sabre.openres.ortl.AssociationParentType@528c51c[id=399bf4b0-946c-4a52-8c42-5d78a47fffb5, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@37a4b3e9[sourceSystem=PNRC, uniqueIdComponents={2}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@1e1fa289[id=5435b922-8d34-4aa0-a1e4-d1069bf85fdd, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2ee7dfd2[sourceSystem=PNRC, uniqueIdComponents={13}]],com.sabre.openres.ortl.AssociationChildType@79176c0c[id=3224d4dc-5129-4906-8c04-566c1ac0c240, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@70b6c5ef[sourceSystem=PNRC, uniqueIdComponents={15}]]}]}]]>}], openResTimestamp=Wed Apr 08 12:08:33 CDT 2015, changeSet=<null>]
+12:12:23,434 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering createBasicOpenResIfNeeded.
+12:12:23,434 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting createBasicOpenResIfNeeded.
+12:12:23,434 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [createOrRetrieveCart] changeSetDoesntExist: com.sabre.openres.ortl.OpenReservationCart@63dc2ea1[correlationId=a71589562c8bc29f, openRes=com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=3], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}],com.sabre.openres.ortl.AssociationType@ee3abdf[associationParent=com.sabre.openres.ortl.AssociationParentType@528c51c[id=399bf4b0-946c-4a52-8c42-5d78a47fffb5, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@37a4b3e9[sourceSystem=PNRC, uniqueIdComponents={2}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@1e1fa289[id=5435b922-8d34-4aa0-a1e4-d1069bf85fdd, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2ee7dfd2[sourceSystem=PNRC, uniqueIdComponents={13}]],com.sabre.openres.ortl.AssociationChildType@79176c0c[id=3224d4dc-5129-4906-8c04-566c1ac0c240, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@70b6c5ef[sourceSystem=PNRC, uniqueIdComponents={15}]]}]}]]>}], openResTimestamp=Wed Apr 08 12:08:33 CDT 2015, changeSet=<null>]
+12:12:23,434 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [createOrRetrieveCart] cart: com.sabre.openres.ortl.OpenReservationCart@63dc2ea1[correlationId=a71589562c8bc29f, openRes=com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=3], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}],com.sabre.openres.ortl.AssociationType@ee3abdf[associationParent=com.sabre.openres.ortl.AssociationParentType@528c51c[id=399bf4b0-946c-4a52-8c42-5d78a47fffb5, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@37a4b3e9[sourceSystem=PNRC, uniqueIdComponents={2}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@1e1fa289[id=5435b922-8d34-4aa0-a1e4-d1069bf85fdd, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2ee7dfd2[sourceSystem=PNRC, uniqueIdComponents={13}]],com.sabre.openres.ortl.AssociationChildType@79176c0c[id=3224d4dc-5129-4906-8c04-566c1ac0c240, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@70b6c5ef[sourceSystem=PNRC, uniqueIdComponents={15}]]}]}]]>}], openResTimestamp=Wed Apr 08 12:08:33 CDT 2015, changeSet=<null>]
+12:12:23,434 DEBUG [OpenResCartThreadLocal] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [set] changeSet doesn't: true
+12:12:23,434 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering initChangeSet(openResCart, securityPolicy).
+12:12:23,434 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) ChangeSet exists: false
+12:12:23,434 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering fillChangeSetData(openResCart, securityPolicy).
+12:12:23,434 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) securityPolicy: com.sabre.pnrmove.lnianaid.IceSecurityPolicyLniata@310cf4fb
+12:12:23,435 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,435 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,435 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,435 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,435 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) session: com.sabre.ice.client.security.Session@6f7d07b8
+12:12:23,435 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,435 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,487 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,487 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,487 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,487 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,487 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context_isIceInit:true
+12:12:23,487 DEBUG [IceSecurityPolicy] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) context:com.sabre.tds.service.context.ServiceContextImpl@538c92d4, parameters: [ICE_SESSION, ICE_INIT, USE_ATH]
+12:12:23,487 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting fillChangeSetData(openResCart, securityPolicy).
+12:12:23,487 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting initChangeSet(openResCart, securityPolicy).
+12:12:23,487 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting createOrRetrieveCart(pnrTree, historyEnabled). Reservation cart: com.sabre.openres.ortl.OpenReservationCart@63dc2ea1[correlationId=a71589562c8bc29f, openRes=com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=4], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}],com.sabre.openres.ortl.AssociationType@ee3abdf[associationParent=com.sabre.openres.ortl.AssociationParentType@528c51c[id=399bf4b0-946c-4a52-8c42-5d78a47fffb5, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@37a4b3e9[sourceSystem=PNRC, uniqueIdComponents={2}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@1e1fa289[id=5435b922-8d34-4aa0-a1e4-d1069bf85fdd, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2ee7dfd2[sourceSystem=PNRC, uniqueIdComponents={13}]],com.sabre.openres.ortl.AssociationChildType@79176c0c[id=3224d4dc-5129-4906-8c04-566c1ac0c240, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@70b6c5ef[sourceSystem=PNRC, uniqueIdComponents={15}]]}]}]]>}], openResTimestamp=Wed Apr 08 12:08:33 CDT 2015, changeSet=com.sabre.openres.ortl.HistoricTransactionType@75a28d76[id=0658610c-b4dd-4d21-87e2-94674138d223, client=6771718, timestamp=Wed Apr 08 12:12:23 CDT 2015, sequenceNumber=4, dutyCode=*, agentSine=MS8, homeCityCode=HDQ, agencyPCC=61N1, oac=, historyTransactionElements=<null>]]
+12:12:23,488 DEBUG [ReservationOrchestration] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Received response from OpenResMgmt. OpenResCartcom.sabre.openres.ortl.OpenReservationCart@63dc2ea1[correlationId=a71589562c8bc29f, openRes=com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=4], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}],com.sabre.openres.ortl.AssociationType@ee3abdf[associationParent=com.sabre.openres.ortl.AssociationParentType@528c51c[id=399bf4b0-946c-4a52-8c42-5d78a47fffb5, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@37a4b3e9[sourceSystem=PNRC, uniqueIdComponents={2}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@1e1fa289[id=5435b922-8d34-4aa0-a1e4-d1069bf85fdd, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2ee7dfd2[sourceSystem=PNRC, uniqueIdComponents={13}]],com.sabre.openres.ortl.AssociationChildType@79176c0c[id=3224d4dc-5129-4906-8c04-566c1ac0c240, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@70b6c5ef[sourceSystem=PNRC, uniqueIdComponents={15}]]}]}]]>}], openResTimestamp=Wed Apr 08 12:08:33 CDT 2015, changeSet=com.sabre.openres.ortl.HistoricTransactionType@75a28d76[id=0658610c-b4dd-4d21-87e2-94674138d223, client=6771718, timestamp=Wed Apr 08 12:12:23 CDT 2015, sequenceNumber=4, dutyCode=*, agentSine=MS8, homeCityCode=HDQ, agencyPCC=61N1, oac=, historyTransactionElements=<null>]]
+12:12:23,488 DEBUG [ReservationOrchestrationChain] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Entering. Executing persistent tasks.
+12:12:23,488 DEBUG [NameAssociationReferenceUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Entering.
+12:12:23,488 DEBUG [NameAssociationReferenceUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [filterOutAssociationUpdates] Allowed 0 out of 1.
+12:12:23,488 DEBUG [NameAssociationReferenceUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] All PshUpdates: []
+12:12:23,488 DEBUG [NameAssociationReferenceUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] anyChangeApplied: false
+12:12:23,488 DEBUG [NameAssociationReferenceUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] temporaryDataRemoved: false
+12:12:23,488 DEBUG [NameAssociationReferenceUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Exiting.
+12:12:23,488 DEBUG [ReservationOrchestrationChain] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Persistent tasks executed. Preserving OpenReservationCart
+12:12:23,488 DEBUG [ReservationOrchestrationChain] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Executing fallible tasks.
+12:12:23,488 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Entering.
+12:12:23,488 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [filterOutAssociationUpdates] Allowed 1 out of 1.
+12:12:23,488 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Association updates size: 1
+12:12:23,488 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Reservation updates size: 0
+12:12:23,488 DEBUG [NameAssociationChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [processUpdateAssociation] Entering.
+12:12:23,488 DEBUG [NameAssociationChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [processUpdateAssociation] Invoking NameAssociationService for Divide.
+12:12:23,488 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Starting process(associationRequest).
+12:12:23,488 DEBUG [NameAssociationServiceValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering.
+12:12:23,488 DEBUG [PassengerValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: NAME
+12:12:23,488 DEBUG [PassengerValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: REMARK
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: PHONE_NUMBER
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: TICKET
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: ACCOUNTING_LINE
+12:12:23,488 DEBUG [DfHeaderDataValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [ReservationUpdateItemValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: class com.sabre.tds.common.openresmgmt.utils.RemarkUpdateItemGetter
+12:12:23,488 DEBUG [ReservationUpdateItemValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [ReservationUpdateItemValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Entering. Validation area: class com.sabre.tds.common.openresmgmt.utils.RemarkPartialUpdateItemGetter
+12:12:23,488 DEBUG [ReservationUpdateItemValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [NameAssociationServiceValidator] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [validate] Exiting.
+12:12:23,488 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AssociationUpdateList size: 1
+12:12:23,488 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) OpenReservation: com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=4], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}],com.sabre.openres.ortl.AssociationType@ee3abdf[associationParent=com.sabre.openres.ortl.AssociationParentType@528c51c[id=399bf4b0-946c-4a52-8c42-5d78a47fffb5, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@37a4b3e9[sourceSystem=PNRC, uniqueIdComponents={2}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@1e1fa289[id=5435b922-8d34-4aa0-a1e4-d1069bf85fdd, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2ee7dfd2[sourceSystem=PNRC, uniqueIdComponents={13}]],com.sabre.openres.ortl.AssociationChildType@79176c0c[id=3224d4dc-5129-4906-8c04-566c1ac0c240, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@70b6c5ef[sourceSystem=PNRC, uniqueIdComponents={15}]]}]}]]>}]
+12:12:23,488 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AssociationRequestContext: AssociationRequestContext{isIndirectCancel=true, deleteAllForIndirectCancel=true}
+12:12:23,488 DEBUG [AssociationMatrixHelper] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Found existing association matrix: 13969c49-16e2-4991-b772-5c8f7238f3e5
+12:12:23,488 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering initChangeSet(openResCart, securityPolicy).
+12:12:23,488 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) ChangeSet exists: true
+12:12:23,488 DEBUG [HistoryService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting initChangeSet(openResCart, securityPolicy).
+12:12:23,488 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Association update: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.AssociationUpdatePNRB@1b8dccdf[
+  parent=[com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.AssociationParent@7a85529a[
+  reference=2
+  type=NAME_SEQ_ID
+]]
+  child=[]
+  op=DELETE
+]
+12:12:23,488 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) History enabled, processing with associationHistoryDataProvider
+12:12:23,488 DEBUG [NameAssociationServiceProcessor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Looking for a delegate for operation type: DELETE
+12:12:23,488 DEBUG [NameAssociationServiceProcessor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Delegate found. Performing processing...
+12:12:23,488 DEBUG [NameAssociationServiceProcessor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Processing parents.
+12:12:23,488 DEBUG [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering processParents(..).
+12:12:23,488 DEBUG [NameAssociationServiceProcessorDeleteDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Deleting associations for given parents.
+12:12:23,488 DEBUG [NameAssociationServiceProcessorDeleteDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Removed associations: [(PersonIDType: 2) <-> (AccountingLineIDType: 13), (PersonIDType: 2) <-> (TicketingIDType: 15), ]
+12:12:23,488 DEBUG [NameAssociationServiceProcessorDeleteDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Associations removed.
+12:12:23,488 INFO  [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Association matrix updated.
+12:12:23,488 DEBUG [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Updating history...
+12:12:23,489 DEBUG [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) History not enabled for: ACCOUNTING_LINE
+12:12:23,489 DEBUG [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) History not enabled for: null
+12:12:23,489 INFO  [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Association history updated.
+12:12:23,489 DEBUG [NameAssociationServiceProcessorBaseDelegate] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting processParents(..).
+12:12:23,489 DEBUG [NameAssociationServiceProcessor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Processing finished. AssociationMatrix changed: true
+12:12:23,489 DEBUG [MatrixChildrenDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering extract(matrixBefore, matrixAfter).
+12:12:23,489 DEBUG [MatrixChildrenDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) TicketingIDType
+12:12:23,489 DEBUG [MatrixDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) childReferenceType=com.sabre.openres.ortl.UniqueReferenceType@2f57a50[sourceSystem=PNRC, uniqueIdComponents={15}]
+12:12:23,489 DEBUG [MatrixChildrenDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) AccountingLineIDType
+12:12:23,489 DEBUG [MatrixDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) childReferenceType=com.sabre.openres.ortl.UniqueReferenceType@2611e85f[sourceSystem=PNRC, uniqueIdComponents={13}]
+12:12:23,489 DEBUG [MatrixChildrenDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Change map: [com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@61aec87f[
+  parentId=<null>
+  childId=13
+  childType=ACCOUNTING_LINE
+  operation=D
+], com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@42311bb4[
+  parentId=<null>
+  childId=15
+  childType=TICKET
+  operation=D
+]]
+12:12:23,489 DEBUG [MatrixChildrenDifferenceExtractor] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting extract(matrixBefore, matrixAfter).
+12:12:23,489 DEBUG [AssociationMatrixHelper] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Found existing association matrix: 13969c49-16e2-4991-b772-5c8f7238f3e5
+12:12:23,489 DEBUG [AssociationMatrixHelper] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Found existing association matrix: 13969c49-16e2-4991-b772-5c8f7238f3e5
+12:12:23,489 DEBUG [NameAssociationService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting process(associationRequest).
+12:12:23,489 DEBUG [NameAssociationChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [processUpdateAssociation] Exiting.
+12:12:23,489 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] All PshUpdates: [com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@61aec87f[
+  parentId=<null>
+  childId=13
+  childType=ACCOUNTING_LINE
+  operation=D
+], com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@42311bb4[
+  parentId=<null>
+  childId=15
+  childType=TICKET
+  operation=D
+]]
+12:12:23,489 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] associationPresent: true
+12:12:23,489 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] anyChangeApplied: true
+12:12:23,489 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] temporaryDataRemoved: false
+12:12:23,489 DEBUG [NameAssociationUpdateChainTask] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Exiting.
+12:12:23,489 DEBUG [ReservationOrchestrationChain] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [composeResponse] Entering.
+12:12:23,489 DEBUG [ReservationOrchestrationChain] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [composeResponse] Exiting.
+12:12:23,489 DEBUG [ReservationOrchestrationChain] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [process] Exiting.
+12:12:23,489 DEBUG [ReservationOrchestration] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Sending an OpenReservationCart update.
+12:12:23,489 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PDS RQ action: [OpenResCartUpdateRQ] content: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:OpenResCartUpdateRQ Version="1.1" xmlns:ns2="http://pds.tds.sabre.com/Services" xmlns:ns4="http://services.sabre.com/res/ores/v0" xmlns:ns3="http://services.sabre.com/res/ortl/v0" xmlns:ns5="http://pnrds.tds.sabre.com/Services/v2" xmlns:ns6="http://pnrds.tds.sabre.com/Metadata" xmlns:ns7="http://pnrds.tds.sabre.com/Services" xmlns:ns8="http://webservices.sabre.com/pnrconn/ReaccSearch">
+    <ns4:OpenReservationCart>
+        <ns3:CorrelationId>a71589562c8bc29f</ns3:CorrelationId>
+        <ns3:OpenRes>
+            <ns3:Id>f503855a-1abd-4596-a7ad-3a6d8d7ef9f2</ns3:Id>
+            <ns3:Locator>HSNDUR</ns3:Locator>
+            <ns3:CreateDate>2015-04-08</ns3:CreateDate>
+            <ns3:Header>
+                <ns3:SequenceNumber>4</ns3:SequenceNumber>
+            </ns3:Header>
+            <ns3:ChangeIndicators>
+                <ns3:FOPUpdated>false</ns3:FOPUpdated>
+                <ns3:AssociationUpdated>true</ns3:AssociationUpdated>
+                <ns3:ProductUpdated>false</ns3:ProductUpdated>
+            </ns3:ChangeIndicators>
+            <ns3:AssociationMatrix>
+                <ns3:Id>13969c49-16e2-4991-b772-5c8f7238f3e5</ns3:Id>
+                <ns3:Association>
+                    <ns3:AssociationParent>
+                        <ns3:Id>d2f86d25-32cd-4032-8ee3-1be82ca4749f</ns3:Id>
+                        <ns3:Type>PersonIDType</ns3:Type>
+                        <ns3:UniqueReference>
+                            <ns3:SourceSystem>PNRC</ns3:SourceSystem>
+                            <ns3:UniqueIdComponent>1</ns3:UniqueIdComponent>
+                        </ns3:UniqueReference>
+                    </ns3:AssociationParent>
+                    <ns3:AssociationChild>
+                        <ns3:Id>3c471d20-7156-4d2e-bfe9-c435c8cdc3be</ns3:Id>
+                        <ns3:Type>AccountingLineIDType</ns3:Type>
+                        <ns3:UniqueReference>
+                            <ns3:SourceSystem>PNRC</ns3:SourceSystem>
+                            <ns3:UniqueIdComponent>12</ns3:UniqueIdComponent>
+                        </ns3:UniqueReference>
+                    </ns3:AssociationChild>
+                    <ns3:AssociationChild>
+                        <ns3:Id>488dca82-fa0f-43c3-b1d4-a477e77f35f8</ns3:Id>
+                        <ns3:Type>TicketingIDType</ns3:Type>
+                        <ns3:UniqueReference>
+                            <ns3:SourceSystem>PNRC</ns3:SourceSystem>
+                            <ns3:UniqueIdComponent>14</ns3:UniqueIdComponent>
+                        </ns3:UniqueReference>
+                    </ns3:AssociationChild>
+                </ns3:Association>
+            </ns3:AssociationMatrix>
+        </ns3:OpenRes>
+        <ns3:OpenResTimestamp>2015-04-08T12:08:33.687</ns3:OpenResTimestamp>
+    </ns4:OpenReservationCart>
+</ns2:OpenResCartUpdateRQ>
+
+12:12:23,489 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] request context:
+messageID = null,refToMessageID = null,replyTo = null,client id = null, MOM_ENCODING_TYPE = UTF-8, Action = OpenResCartUpdateRQ, PDS_SCHEMA_VERSION = 2.0, exception = null
+12:12:23,490 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] request payload size: 2877
+12:12:23,490 DEBUG [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) 
+---- pdsRetrieveMomService - request ----
+Len  -                 Hex                        ASCII               SABRE
+---- - -----------------------------------  ------------------  ------------------
+0000 - 3C3F786D 6C207665 7273696F 6E3D2231  |<?xml version="1|  |..._%......?>...|
+0010 - 2E302220 656E636F 64696E67 3D225554  |.0" encoding="UT|  |.....>.?..>.....|
+0020 - 462D3822 20737461 6E64616C 6F6E653D  |F-8" standalone=|  |......./>./%?>..|
+0030 - 22796573 223F3E0A 3C6E7332 3A4F7065  |"yes"?>.<ns2:Ope|  |.`.......>......|
+0040 - 6E526573 43617274 55706461 74655251  |nResCartUpdateRQ|  |>..../...../....|
+0050 - 20566572 73696F6E 3D22312E 31222078  | Version="1.1" x|  |......?>........|
+0060 - 6D6C6E73 3A6E7332 3D226874 74703A2F  |mlns:ns2="http:/|  |_%>..>..........|
+0070 - 2F706473 2E746473 2E736162 72652E63  |/pds.tds.sabre.c|  |........../.....|
+0080 - 6F6D2F53 65727669 63657322 20786D6C  |om/Services" xml|  |?_............_%|
+0090 - 6E733A6E 73343D22 68747470 3A2F2F73  |ns:ns4="http://s|  |>..>............|
+00A0 - 65727669 6365732E 73616272 652E636F  |ervices.sabre.co|  |........./.....?|
+00B0 - 6D2F7265 732F6F72 65732F76 30222078  |m/res/ores/v0" x|  |_.....?.........|
+00C0 - 6D6C6E73 3A6E7333 3D226874 74703A2F  |mlns:ns3="http:/|  |_%>..>..........|
+00D0 - 2F736572 76696365 732E7361 6272652E  |/services.sabre.|  |.........../....|
+00E0 - 636F6D2F 7265732F 6F72746C 2F763022  |com/res/ortl/v0"|  |.?_.....?..%....|
+00F0 - 20786D6C 6E733A6E 73353D22 68747470  | xmlns:ns5="http|  |.._%>..>........|
+0100 - 3A2F2F70 6E726473 2E746473 2E736162  |://pnrds.tds.sab|  |....>........./.|
+ -- truncated: 2621 bytes
+12:12:23,607 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] response context:
+messageID = ID:ltxl1016.sgdcelab.sabre.com-5XXXXXXXXXXXX41376-7:1:4:1:11,refToMessageID = 3b9acbdd,replyTo = null,client id = ID:0a0ee82879a7ddf9e40105d1e40105d173fea2a673fea2a6, MOM_ENCODING_TYPE = UTF-8, MOM_MESSAGE_TYPE = reply, isCorrectResponse = true, MOM_MSG_ID = 3b9acbdd, exception = null
+12:12:23,607 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] response payload size: 400
+12:12:23,608 DEBUG [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) 
+---- pdsRetrieveMomService - response ----
+Len  -                 Hex                        ASCII               SABRE
+---- - -----------------------------------  ------------------  ------------------
+0000 - 3C3F786D 6C207665 7273696F 6E3D2231  |<?xml version="1|  |..._%......?>...|
+0010 - 2E302220 656E636F 64696E67 3D225554  |.0" encoding="UT|  |.....>.?..>.....|
+0020 - 462D3822 20737461 6E64616C 6F6E653D  |F-8" standalone=|  |......./>./%?>..|
+0030 - 22796573 223F3E0A 3C6E7334 3A4F7065  |"yes"?>.<ns4:Ope|  |.`.......>......|
+0040 - 6E526573 43617274 55706461 74655253  |nResCartUpdateRS|  |>..../...../....|
+0050 - 20566572 73696F6E 3D22312E 30222078  | Version="1.0" x|  |......?>........|
+0060 - 6D6C6E73 3A6E7332 3D226874 74703A2F  |mlns:ns2="http:/|  |_%>..>..........|
+0070 - 2F736572 76696365 732E7361 6272652E  |/services.sabre.|  |.........../....|
+0080 - 636F6D2F 7265732F 6F72746C 2F763022  |com/res/ortl/v0"|  |.?_.....?..%....|
+0090 - 20786D6C 6E733D22 68747470 3A2F2F70  | xmlns="http://p|  |.._%>...........|
+00A0 - 6E726473 2E746473 2E736162 72652E63  |nrds.tds.sabre.c|  |>........./.....|
+00B0 - 6F6D2F53 65727669 63657322 20786D6C  |om/Services" xml|  |?_............_%|
+00C0 - 6E733A6E 73343D22 68747470 3A2F2F70  |ns:ns4="http://p|  |>..>............|
+00D0 - 64732E74 64732E73 61627265 2E636F6D  |ds.tds.sabre.com|  |......../.....?_|
+00E0 - 2F536572 76696365 73222078 6D6C6E73  |/Services" xmlns|  |............_%>.|
+00F0 - 3A6E7333 3D226874 74703A2F 2F736572  |:ns3="http://ser|  |.>..............|
+0100 - 76696365 732E7361 6272652E 636F6D2F  |vices.sabre.com/|  |......./.....?_.|
+ -- truncated: 144 bytes
+12:12:23,608 INFO  [MomServiceLogging] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [pdsRetrieveMomService] elapsed time: 119ms
+12:12:23,608 DEBUG [OpenResMgmt] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PDS RS: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:OpenResCartUpdateRS Version="1.0" xmlns:ns2="http://services.sabre.com/res/ortl/v0" xmlns="http://pnrds.tds.sabre.com/Services" xmlns:ns4="http://pds.tds.sabre.com/Services" xmlns:ns3="http://services.sabre.com/res/ores/v0" xmlns:ns5="http://pnrds.tds.sabre.com/Services/v2">
+    <ns4:Success>true</ns4:Success>
+</ns4:OpenResCartUpdateRS>
+
+12:12:23,609 DEBUG [ReservationOrchestration] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) OpenReservationCart updated. Result: true
+12:12:23,609 DEBUG [ReservationOrchestration] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) All updates applied successfully.
+12:12:23,610 DEBUG [ReservationOrchestration] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [doProcess] Response: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.UpdateReservationRS@5c6e64f5[
+  locator=<null>
+  success=true
+  warnings=<null>
+  errors=<null>
+  reservation=<null>
+  content=<null>
+  results=<null>
+  pshUpdates=[com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@61aec87f[
+  parentId=<null>
+  childId=13
+  childType=ACCOUNTING_LINE
+  operation=D
+], com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@42311bb4[
+  parentId=<null>
+  childId=15
+  childType=TICKET
+  operation=D
+]]
+  correlationId=a71589562c8bc29f
+  version=<null>
+]
+12:12:23,610 DEBUG [PnrBuilderPassengerIndirectCancelReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [callService] Exiting.
+12:12:23,610 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [perform] Response: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.UpdateReservationRS@5c6e64f5[
+  locator=<null>
+  success=true
+  warnings=<null>
+  errors=<null>
+  reservation=<null>
+  content=<null>
+  results=<null>
+  pshUpdates=[com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@61aec87f[
+  parentId=<null>
+  childId=13
+  childType=ACCOUNTING_LINE
+  operation=D
+], com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PshUpdatePNRB@42311bb4[
+  parentId=<null>
+  childId=15
+  childType=TICKET
+  operation=D
+]]
+  correlationId=a71589562c8bc29f
+  version=<null>
+]
+12:12:23,610 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) openResCart: com.sabre.openres.ortl.OpenReservationCart@63dc2ea1[correlationId=a71589562c8bc29f, openRes=com.sabre.openres.ortl.OpenReservation@c797f3f[id=f503855a-1abd-4596-a7ad-3a6d8d7ef9f2, locator=HSNDUR, createDate=Wed Apr 08 00:00:00 CDT 2015, header=com.sabre.openres.ortl.OpenReservationHeaderType@7c91077e[sequenceNumber=4], changeIndicators=com.sabre.openres.ortl.ChangeIndicatorsType@15832116[fopUpdated=false, associationUpdated=true, productUpdated=false], abstractReservationGroups={<{http://services.sabre.com/res/ortl/v0}AssociationMatrix[com.sabre.openres.ortl.AssociationMatrixType@53f13662[id=13969c49-16e2-4991-b772-5c8f7238f3e5, associations={com.sabre.openres.ortl.AssociationType@12986fc[associationParent=com.sabre.openres.ortl.AssociationParentType@4d5d0afc[id=d2f86d25-32cd-4032-8ee3-1be82ca4749f, type=PersonIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@177c4e12[sourceSystem=PNRC, uniqueIdComponents={1}]], associationchildren={com.sabre.openres.ortl.AssociationChildType@61e98bc9[id=3c471d20-7156-4d2e-bfe9-c435c8cdc3be, type=AccountingLineIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@2bd86b57[sourceSystem=PNRC, uniqueIdComponents={12}]],com.sabre.openres.ortl.AssociationChildType@d6f333e[id=488dca82-fa0f-43c3-b1d4-a477e77f35f8, type=TicketingIDType, uniqueReference=com.sabre.openres.ortl.UniqueReferenceType@7f8d3255[sourceSystem=PNRC, uniqueIdComponents={14}]]}]}]]>}], openResTimestamp=Wed Apr 08 12:08:33 CDT 2015, changeSet=<null>]
+12:12:23,610 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [getPnrTree] Returning PnrTree from context.
+12:12:23,621 DEBUG [AssociationDivideUtils] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering createIndCancelNamesMap
+12:12:23,625 DEBUG [AssociationDivideUtils] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Map of remaining names after indirect cancel created: {1=1.1TEST/ONE}
+12:12:23,625 DEBUG [AssociationDivideUtils] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering createIdToNewNameNumberMap
+12:12:23,626 DEBUG [AssociationDivideUtils] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) New name numbers after divide: {}
+12:12:23,626 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Creating PNRUpdate...
+12:12:23,626 DEBUG [StlUpdateConverter] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Created PNRUpdateUnit containing 0 action items.
+12:12:23,626 DEBUG [PNRUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Updates from request: []
+12:12:23,626 DEBUG [HeaderPshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) CID existing in PNR: null
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering buildPshUpdate
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) changeMap = {}
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Action items: [HeaderPartialUpdateItem{correlationId=a71589562c8bc29f, pnrcId4Value=64, pnrcId3Value=null, openSystemReferenceId=null}]
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting buildPshUpdate
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering buildPshUpdate
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) changeMap = {}
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Action items: [HeaderPartialUpdateItem{correlationId=a71589562c8bc29f, pnrcId4Value=64, pnrcId3Value=null, openSystemReferenceId=null}]
+12:12:23,626 DEBUG [PshUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting buildPshUpdate
+12:12:23,626 DEBUG [PNRUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Updates after response merge: [HeaderPartialUpdateItem{correlationId=a71589562c8bc29f, pnrcId4Value=64, pnrcId3Value=null, openSystemReferenceId=null}]
+12:12:23,626 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [perform] Preparing InterchangeData...
+12:12:23,626 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [createInterchangeListForDivide] Entering.
+12:12:23,626 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Found interchange to add.
+12:12:23,626 DEBUG [PshUpdateTransformer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering transform(PshUpdatePNRB)
+12:12:23,626 DEBUG [PshUpdateTransformer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Parsed ids - parent: 0, child: 13
+12:12:23,626 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Found interchange to add.
+12:12:23,626 DEBUG [PshUpdateTransformer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering transform(PshUpdatePNRB)
+12:12:23,626 DEBUG [PshUpdateTransformer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Parsed ids - parent: 0, child: 15
+12:12:23,626 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [createInterchangeListForDivide] Exiting.
+12:12:23,626 DEBUG [PnrdcResponsePreparer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [prepare] Entering.
+12:12:23,626 INFO  [PNRDataInterchangeBuilderToDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [sortInterchanges] status: false
+12:12:23,626 INFO  [PNRDataInterchangeBuilderToDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform] buildData size: 2
+12:12:23,626 INFO  [PNRDataInterchangeBuilderToDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform]  buildData-interchangeData: PNRDataInterchange: , type: O, action1Name: DELETE_LREC(16), action2Byte: 0, ukyPrime: 13, ukySecondary: 0, spareBytes: 0000, [additionalDataList: ffffffa8, ]
+12:12:23,626 INFO  [PNRDataInterchangeBuilderToDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform]  buildData-interchangeData: PNRDataInterchange: , type: O, action1Name: DELETE_LREC(16), action2Byte: 0, ukyPrime: 15, ukySecondary: 0, spareBytes: 0000, [additionalDataList: 00000068, ]
+12:12:23,626 DEBUG [PNRDataInterchangeBuilderToDF] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [transform] dfFragment: 001920d6100000000d000000000001000000000004ffffffa8001920d6100000000f00000000000100000000000400000068
+12:12:23,626 DEBUG [PnrdcResponsePreparer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) The Request is STATEFUL
+12:12:23,626 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Entering buildRequestList(..).
+12:12:23,626 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Retrieve not null, creating retrieve unit
+12:12:23,626 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Transforming retrieve
+12:12:23,626 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Retrieve unit: com.sabre.pnrmove.update.pshmodel.unit.PNRRetrieveUnit@1aef4cb6
+12:12:23,627 DEBUG [HeaderPartialUpdateBuilder] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) HeaderPartialUpdateItem{correlationId=a71589562c8bc29f, pnrcId4Value=64, pnrcId3Value=null, openSystemReferenceId=null}
+12:12:23,627 DEBUG [HeaderPartialUpdateItem] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Correlcation ID: a71589562c8bc29f
+12:12:23,627 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) dto interchange available: false
+12:12:23,627 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) number of fragments: 2
+12:12:23,627 DEBUG [MessageBuilderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Exiting buildRequestList(..).
+12:12:23,627 DEBUG [PnrdcResponsePreparer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [prepare] Response: {PSH_UPDATE_HEADER=[B@16577168, PNR_DATA_INTERCHANGE=[B@46d66e4d, PSH_UPDATE_BODY=[B@27e3a590}
+12:12:23,628 DEBUG [PnrdcResponsePreparer] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [prepare] Exiting.
+12:12:23,628 DEBUG [PnrBuilderTemplateReduceAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [perform] Exiting.
+12:12:23,628 DEBUG [PnrBuilderIndirectCancelAction] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [doPerform] Exiting.
+12:12:23,628 DEBUG [PnrBuilderDataProviderImpl] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) [call] Exiting.
+12:12:23,628 DEBUG [ThreadScopeAttributes] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) Performing destruction callback for 'scopedTarget.serviceContext' bean on thread 'Pss-PnrSvc--MOM-Consumer-Thread-0'.
+12:12:23,628 DEBUG [PnrBuilderDataProviderService] (Pss-PnrSvc--MOM-Consumer-Thread-0:null) PnrBuilderDataProviderService response: com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRS@528aa565[
+  responseMap=com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRS$ResponseMap@c70b439[
+  entry=[com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRS$ResponseMap$Entry@3b481090[
+  key=PSH_UPDATE_HEADER
+  value={0,0,0,45,0,0,1,-45,-119,-126,-123,-103,-93,-88,-63,-63,-63,-39,-123,-93,-103,64,64,0,0,-24,0,-16,-16,-16,-16,-16,-16,0,0,0,0,0,0,0,0,0,2,1,1}
+], com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRS$ResponseMap$Entry@78377c57[
+  key=PNR_DATA_INTERCHANGE
+  value={0,25,32,-42,16,0,0,0,13,0,0,0,0,0,1,0,0,0,0,0,4,-1,-1,-1,-88,0,25,32,-42,16,0,0,0,15,0,0,0,0,0,1,0,0,0,0,0,4,0,0,0,104}
+], com.sabre.webservices.pnrbuilder.res_cdm.v_1_0.PnrBuilderDataProviderRS$ResponseMap$Entry@2c4716a[
+  key=PSH_UPDATE_BODY
+  value={0,0,0,104,0,0,1,-41,-43,-39,-28,-41,-60,-63,-29,-59,64,64,64,64,64,64,64,-58,-24,0,0,0,0,0,-24,0,0,0,73,0,-60,3,0,0,0,-43,-128,0,0,0,0,0,32,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,-34,0,-89,21,-119,86,44,-117,-62,-97,0,1,0,-105,0,64}
+]]
+]
+]
+12:12:51,640 INFO  [MessageListenerLogging] (TrpNmv--MOM-Consumer-Thread-4:83IGZUXG) [trpServiceMessageListener] request context:
